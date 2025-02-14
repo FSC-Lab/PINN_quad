@@ -1,0 +1,6 @@
+set(QUAD_POS_CONTROL_TARGET quad_pos_pid)
+aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/ quad_pos_controller_src_list)
+add_library(${QUAD_POS_CONTROL_TARGET} STATIC ${quad_pos_controller_src_list})
+target_link_libraries(${QUAD_POS_CONTROL_TARGET} PRIVATE ${LASAN} utility_functions Eigen3::Eigen)
+target_include_directories(${QUAD_POS_CONTROL_TARGET} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_options(${QUAD_POS_CONTROL_TARGET} PRIVATE ${COMPILE_FLAGS})

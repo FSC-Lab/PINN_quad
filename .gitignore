@@ -1,0 +1,74 @@
+**/slprj/**
+**/x64/**
+*.mat
+**/v15/**
+**/eigen3/**
+*.autosave
+*.asv
+*.slxc
+**/.cache/**
+**/__pycache__/**
+
+# Build Outputs
+build_release/**
+build_debug/**
+out/**
+data/**
+
+# mosek lib
+thirdparty/**
+mosek/**
+
+# ut results
+ut/results/*
+ut/report/*
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Clangd cache
+.cache/
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out*
+*.app
